@@ -1,0 +1,66 @@
+/* Views/assets/css/home.css */
+
+#home-body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+#home-body header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    width: 100%;
+}
+
+#home-body header h1 {
+    margin: 0;
+}
+
+#home-body nav {
+    background-color: #4caf50;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#home-body nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#home-body nav ul li {
+    margin-bottom: 10px;
+}
+
+#home-body nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #388e3c;
+    text-align: center;
+}
+
+#home-body nav ul li a:hover {
+    background-color: #1b5e20;
+}
+
+#home-body section {
+    padding: 20px;
+}
+
+#home-body footer {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,221 @@
+/* Tela Registro de Ponto */
+body.tela-registroPonto {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.tela-registroPonto header,
+body.tela-registroPonto nav,
+body.tela-registroPonto section,
+body.tela-registroPonto footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body.tela-registroPonto header {
+    text-align: center;
+    background-color: #388e3c;
+    color: #fff;
+    padding: 10px 0;
+}
+
+body.tela-registroPonto nav {
+    background-color: #388e3c;
+    padding: 10px;
+    text-align: center;
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+body.tela-registroPonto nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centralize os itens do menu */
+}
+
+body.tela-registroPonto nav ul li {
+    margin-right: 10px;
+}
+
+body.tela-registroPonto nav ul li:last-child {
+    margin-right: 0;
+}
+
+body.tela-registroPonto nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #207026;
+    width: 150px; /* Define uma largura fixa para os botões */
+    height: 60px; /* Define uma altura fixa para os botões */
+    text-align: center; /* Centraliza o texto dentro dos botões */
+    box-sizing: border-box; /* Inclui a padding e borda na largura do botão */
+    transition: background-color 0.3s ease;
+}
+
+body.tela-registroPonto nav ul li a:hover {
+    background-color: #1b5e20;
+}
+
+body.tela-registroPonto section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body.tela-registroPonto form {
+    max-width: 400px;
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center; /* Centraliza verticalmente */
+    height: 60vh; /* Para ocupar a altura total da tela */
+}
+
+body.tela-registroPonto form label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+body.tela-registroPonto form select,
+body.tela-registroPonto form input[type="time"] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do select e input de tempo */
+}
+
+body.tela-registroPonto form button {
+    width: 30%; /* Largura total do botão */
+    max-width: 250px;
+    margin: 0 auto; /* Adiciona margem automática nas laterais para centralizar horizontalmente */
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: #207026;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+body.tela-registroPonto form button:hover {
+    background-color: #1b5e20;
+}
+
+body.tela-registroPonto footer {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+/* Responsividade Tela Registro de Ponto */
+@media (max-width: 768px) {
+    body.tela-registroPonto header,
+    body.tela-registroPonto nav {
+        width: 100%;
+        text-align: center;
+        background-color: #388e3c;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    body.tela-registroPonto nav ul {
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    body.tela-registroPonto nav ul li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    body.tela-registroPonto nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        border-radius: 3px;
+        background-color: #207026;
+        display: block;
+        width: 250px;
+        height: 40px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    body.tela-registroPonto nav ul li a:hover {
+        background-color: #1b5e20;
+    }
+
+    body.tela-registroPonto section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    body.tela-registroPonto form {
+        max-width: 70%;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    body.tela-registroPonto form label {
+        text-align: left;
+        
+    }
+
+    body.tela-registroPonto form select,
+    body.tela-registroPonto form input[type="time"] {
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    body.tela-registroPonto form button {
+        width: 50%;
+        max-width: 250px;
+        margin: 0 auto;
+        padding: 12px;
+        box-sizing: border-box;
+        background-color: #207026;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    body.tela-registroPonto form button:hover {
+        background-color: #1b5e20;
+    }
+
+    body.tela-registroPonto footer {
+        text-align: center;
+        background-color: #f0f0f0;
+        padding: 10px 0;
+        margin-top: auto;
+    }
+}
